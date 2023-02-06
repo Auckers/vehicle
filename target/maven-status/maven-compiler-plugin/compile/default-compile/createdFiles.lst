@@ -1,7 +1,11 @@
+com/vehicle/model/dto/Color.class
 com/vehicle/model/domain/Vehicle.class
 com/vehicle/VehicleApplication.class
 com/vehicle/service/VehicleRegistrationServiceImpl.class
+com/vehicle/model/dto/VehicleDetails.class
 com/vehicle/repository/VehicleRepository.class
-com/vehicle/model/dto/User.class
+com/vehicle/repository/OwnerRepository.class
+com/vehicle/model/domain/Owner.class
 com/vehicle/service/VehicleRegistrationService.class
 com/vehicle/controller/VehicleController.class
+com/vehicle/model/dto/VehicleType.class
