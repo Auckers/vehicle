@@ -1,47 +1,40 @@
 package com.vehicle.model.domain;
 
-import com.vehicle.model.dto.User;
+import com.vehicle.model.dto.VehicleDetails;
 
 import javax.persistence.*;
 
 @Entity
 public class Vehicle {
     @Id
-    String vehicleId;
+    int vehicleId;
 
-    @Column(name = "VehicleName")
-    String vehicleName;
+    VehicleDetails vehicleDetails;
+    String vehicleCurrentAddress;
 
-    User userDetails;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    Owner ownerDetails;
 
-    public Vehicle(){}
-
-    public Vehicle(String vehicleId, String vehicleName) {
+    public Vehicle(int vehicleId, VehicleDetails vehicleDetails, String vehicleCurrentAddress) {
         this.vehicleId = vehicleId;
-        this.vehicleName = vehicleName;
+        this.vehicleDetails = vehicleDetails;
+        this.vehicleCurrentAddress = vehicleCurrentAddress;
     }
 
-    public String getVehicleId() {
+    public int getVehicleId() {
         return vehicleId;
     }
 
-    public void setVehicleId(String vehicleId) {
-        this.vehicleId = vehicleId;
+    public VehicleDetails getVehicleDetails() {
+        return vehicleDetails;
     }
 
-    public String getVehicleName() {
-        return vehicleName;
+    public String getVehicleCurrentAddress() {
+        return vehicleCurrentAddress;
     }
 
-    public void setVehicleName(String vehicleName) {
-        this.vehicleName = vehicleName;
-    }
-
-    @Override
-    public String toString() {
-        return "Vehicle{" +
-                "vehicleId='" + vehicleId + '\'' +
-                ", vehicleName='" + vehicleName + '\'' +
-                '}';
+    public Owner getOwnerDetails() {
+        return ownerDetails;
     }
 }

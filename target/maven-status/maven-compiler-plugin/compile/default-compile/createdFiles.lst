@@ -1,0 +1,7 @@
+com/vehicle/model/domain/Vehicle.class
+com/vehicle/VehicleApplication.class
+com/vehicle/service/VehicleRegistrationServiceImpl.class
+com/vehicle/repository/VehicleRepository.class
+com/vehicle/model/dto/User.class
+com/vehicle/service/VehicleRegistrationService.class
+com/vehicle/controller/VehicleController.class

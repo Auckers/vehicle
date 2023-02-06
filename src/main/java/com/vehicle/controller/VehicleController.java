@@ -35,7 +35,7 @@ public class VehicleController {
     }
 
     @RequestMapping(value = "/getVehicle", method = RequestMethod.GET)
-    public Vehicle getVehicle(@RequestParam String id){
+    public Vehicle getVehicle(@RequestParam int id){
         try{
             return vehicleRegistrationService.getVehicleById(id);
         }

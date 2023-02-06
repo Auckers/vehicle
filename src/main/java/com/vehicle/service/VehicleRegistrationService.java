@@ -7,6 +7,6 @@ import java.util.List;
 public interface VehicleRegistrationService {
     public boolean addVehicle(Vehicle vehicle);
     public List<Vehicle> getAllVehicles();
-    public Vehicle getVehicleById(String id);
+    public Vehicle getVehicleById(int id);
     public Vehicle getVehicleByName(String vehicleName);
 }

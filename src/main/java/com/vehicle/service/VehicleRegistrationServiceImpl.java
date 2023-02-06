@@ -48,7 +48,7 @@ public class VehicleRegistrationServiceImpl implements VehicleRegistrationServic
      * @return
      */
     @Override
-    public Vehicle getVehicleById(String id) {
+    public Vehicle getVehicleById(int id) {
         try{
             return vehicleRepository.findById(id).get();
         }
