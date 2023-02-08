@@ -16,6 +16,8 @@ public class Vehicle {
     @JoinColumn(name = "user_id")
     Owner ownerDetails;
 
+    public Vehicle() {}
+
     public Vehicle(int vehicleId, VehicleDetails vehicleDetails, String vehicleCurrentAddress) {
         this.vehicleId = vehicleId;
         this.vehicleDetails = vehicleDetails;
